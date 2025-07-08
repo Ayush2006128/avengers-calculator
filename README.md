@@ -1,40 +1,68 @@
-# Welcome to Remix!
+# Avengers Calculator
 
-- 📖 [Remix docs](https://remix.run/docs)
+## Overview
+
+Avengers Calculator is a web-based scientific calculator inspired by Marvel's Avengers and Tony Stark. It features mathematical functions including trigonometry (`sin`, `cos`, `tan`), logarithm (`log`), power (`^`), and square root (`√`).
+
+## Features
+
+- **Scientific Operations**: Perform advanced calculations using trigonometric, logarithmic, and exponential functions.
+- **Responsive Design**: Optimized for various screen sizes using Tailwind CSS.
+- **PWA Support**: Includes a service worker for offline capabilities.
 
 ## Development
 
-Run the dev server:
+To start the development server, run:
 
-```sh
+```bash
 npm run dev
 ```
 
+This will launch the Remix app in development mode using Vite.
+
+### Scripts
+
+- **Build**: `npm run build` - Compiles the project for production.
+- **Start**: `npm start` - Runs the app in production mode.
+- **Lint**: `npm run lint` - Lints the code using ESLint.
+- **Typecheck**: `npm run typecheck` - Checks TypeScript types.
+
 ## Deployment
 
-First, build your app for production:
+### Build
 
-```sh
+First, build the app for production:
+
+```bash
 npm run build
 ```
 
-Then run the app in production mode:
+### Deploy
 
-```sh
+Run the app in production mode:
+
+```bash
 npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
+For deployment, you may choose your desired hosting service that supports Node.js applications.
 
-### DIY
+## Configuration
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+- **Node Version**: Requires Node.js version 20 or higher.
+- **Remix Vite Plugins**: Utilizes Remix plugins for a modern development experience.
+- **Tailwind CSS**: Preconfigured with a simple default theme and responsive design capabilities.
 
-Make sure to deploy the output of `npm run build`
+## File Structure
 
-- `build/server`
-- `build/client`
+Here are some key files and their purpose:
 
-## Styling
+- `app/components/Calculator.tsx`: Main calculator component.
+- `app/routes/_index.tsx`: Entry point for the index route.
+- `vite.config.ts`: Configures Vite for the app.
+- `tailwind.config.ts`: Configures Tailwind CSS for styles.
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+## Acknowledgments
+
+- Developed using [Remix](https://remix.run/) with [Vite](https://vitejs.dev/).
+- Styled with [Tailwind CSS](https://tailwindcss.com/).
